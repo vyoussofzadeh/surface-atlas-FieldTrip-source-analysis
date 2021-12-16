@@ -1,4 +1,4 @@
-# surface-atlas-FieldTrip-source-analysis
+# EXport-Desikan-Killiany-surface-atlas-for-FieldTrip-source-analysis
 Surface-based atlas for source analysis
 Steps, 
 

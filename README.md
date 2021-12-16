@@ -22,7 +22,7 @@ ft_plot_mesh(atlas, 'faecolor', 'brain',  'vertexcolor', ...
 vertexcolor, 'facealpha', 0.5);
 view(-3, 2);
 ```
-3) Updating source values with color-coded parcels and save back the updated source in BS 
+3) Update source values using color-coded parcel values. Save the updated (dummy) source in BS matlab file format.
 ```sdir = './data/Group_analysis/@intra'; % BS directory
 savetag1 = fullfile(sdir, 'results_atlas_DK');
 source.ImageGridAmp  = atlas.desikan_killiany;

@@ -1,7 +1,7 @@
 # Desikan-Killiany-surface-atlas-for FieldTrip-analysis
 Surface-based atlas FieldTrip source analysis steps to do, 
 
-1) export a source map from a sample Brainstorm (BS) database to Matlab. Call the varaible, Source
+1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source"
 2) read (mapping) surface atlas and color-coding areas
 
 ```atlas = ft_read_atlas('./anat/@default_subject/tess_cortex_pial_low.mat');

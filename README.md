@@ -33,7 +33,8 @@ save(fullfile(savetag1),'-struct', 'source'),
 This process can done using BS-GUI (File/Export to SPM8/12 (volume))
 
 6) Cheking and example script
-```dkatlas = ft_read_atlas('xxx/Atlas_DK.nii');
+```
+dkatlas = ft_read_atlas('xxx/Atlas_DK.nii');
 
 cfg = [];
 cfg.parameter    = 'anatomy';

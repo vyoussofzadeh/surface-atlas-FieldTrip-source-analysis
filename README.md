@@ -1,4 +1,4 @@
-# Export-Desikan-Killiany-surface-atlas-from-BrainStorm-to-FieldTrip-toolbox
+# Desikan-Killiany-surface-atlas-for FieldTrip-analysis
 Surface-based atlas for source analysis
 Steps, 
 
@@ -24,5 +24,11 @@ view(-3, 2);
 
 % aa = atlas.desikan_killiany;
 
-4)  
+
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
 

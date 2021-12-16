@@ -1,5 +1,5 @@
 # Desikan–Killiany-surface-atlas-for FieldTrip-analysis
-Desikan-Killian surface atlas for FieldTrip analysis. 
+This page provide an implmenation of a surface atlas (e.g., Desikan-Killian) for source analysis in FieldTrip toolbox. 
 
 Steps to genetate the surface atlas nii file [this process can be generalized to produce other Freesurfer surface atlases], 
 

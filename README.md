@@ -1,5 +1,5 @@
 # Desikan-Killiany-surface-atlas-for FieldTrip-analysis
-Surface-based atlas FieldTrip source analysis steps to do, 
+Desikan-Killian surface-based atlas FieldTrip source analysis steps to do [this process can be applied to other Freesurfer surface atlases], 
 
 1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source"
 2) Read (and visualize) surface color-coded areas
@@ -30,7 +30,7 @@ source.Comment =  'atlas DK';
 save(fullfile(savetag1),'-struct', 'source'),
 ```
 3) Reload the BS database, the dummy source should be appreared in the panel.  
-4) Export file to nii using BS (export to SPM8/12)
+4) From the proces window export the source file to nii (volume) using BS (export to SPM8/12)
 This process can done using BS-GUI (File/Export to SPM8/12 (volume))
 
 6) Cheking and example script

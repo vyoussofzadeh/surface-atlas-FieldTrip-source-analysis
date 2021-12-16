@@ -1,4 +1,4 @@
-# Export-Desikan-Killiany-surface-atlas-for-FieldTrip-source-analysis
+# Export-Desikan-Killiany-surface-atlas-from-BrainStorm-to-FieldTrip-toolbox
 Surface-based atlas for source analysis
 Steps, 
 

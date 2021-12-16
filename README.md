@@ -4,7 +4,8 @@ Surface-based atlas FieldTrip source analysis steps to do,
 1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source"
 2) Read (and visualize) surface color-coded areas
 
-```atlas = ft_read_atlas('./anat/@default_subject/tess_cortex_pial_low.mat');
+```
+atlas = ft_read_atlas('./anat/@default_subject/tess_cortex_pial_low.mat');
 nScouts = size(unique(atlas.desikan_killiany),1);
 colr = hsv(nScouts); 
 vertexcolor = zeros(size(atlas.pos,1), 3);

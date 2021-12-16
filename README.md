@@ -22,13 +22,14 @@ ft_plot_mesh(atlas, 'faecolor', 'brain',  'vertexcolor', ...
 vertexcolor, 'facealpha', 0.5);
 view(-3, 2);
 ```
-3) update source values with color-coded parcels and import back the updated files to BS, e.g., 
+3) Updating source values with color-coded parcels and save the updated source in BS 
 ```sdir = './data/Group_analysis/@intra'; % BS directory
 savetag1 = fullfile(sdir, 'results_atlas_DK');
 source.ImageGridAmp  = atlas.desikan_killiany;
 source.Comment =  'atlas DK';
 save(fullfile(savetag1),'-struct', 'source'),
 ```
+3) Reload BS database, updated source should be appreared in BS panel of the selected database.  
 4) Export file to nii using BS (export to SPM8/12)
 This process can done using BS-GUI (File/Export to SPM8/12 (volume))
 

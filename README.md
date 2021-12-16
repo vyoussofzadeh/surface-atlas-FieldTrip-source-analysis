@@ -30,18 +30,17 @@ source.Comment =  'atlas DK';
 save(fullfile(savetag1),'-struct', 'source'),
 ```
 3) Reload the BS database, the dummy source should be appreared in the panel.  
-4) From the processing window export the source file to nii (volume) using BS (export to SPM8/12)
-This process can done using BS-GUI (File/Export to SPM8/12 (volume))
-
-6) Cheking and example script
+4) From the processing window export the source file to nii (volume) using BS (export to SPM8/12). This process can done using process_export_spmvol in BS.
+5) Check the exported file example script
 ```
 dkatlas = ft_read_atlas('xxx/Atlas_DK.nii');
+atlas_DK.parcellationlabel = DK_ROIs; % mat file is added to repostiry
 
 cfg = [];
 cfg.parameter    = 'anatomy';
 cfg.interpmethod = 'sphere_avg';
 cfg.coordsys     = 'mni';
-data_int  = ft_sourceinterpolate(cfg, weights, atlas_DK);
+data_int  = ft_sourceinterpolate(cfg, SOURCE, atlas_DK); % SOURCE should be generated before
 % data_int1 = data_int;
 
 cfg = [];

@@ -29,7 +29,7 @@ source.ImageGridAmp  = atlas.desikan_killiany;
 source.Comment =  'atlas DK';
 save(fullfile(savetag1),'-struct', 'source'),
 ```
-3) Reload BS database, updated source should be appreared in BS panel of the selected database.  
+3) Reload the BS database, the dummy source should be appreared in the panel.  
 4) Export file to nii using BS (export to SPM8/12)
 This process can done using BS-GUI (File/Export to SPM8/12 (volume))
 

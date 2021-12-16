@@ -1,6 +1,5 @@
 # Desikan-Killiany-surface-atlas-for FieldTrip-analysis
-Surface-based atlas for source analysis
-Steps, 
+Surface-based atlas FieldTrip source analysis steps to do, 
 
 1) export a source map from a sample Brainstorm (BS) database to Matlab. Call the varaible, Source
 2) read (mapping) surface atlas and color-coding areas

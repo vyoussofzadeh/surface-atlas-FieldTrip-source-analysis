@@ -1,10 +1,10 @@
-# Desikan-Killiany-surface-atlas-for FieldTrip-analysis
+# Desikan–Killiany-surface-atlas-for FieldTrip-analysis
 Desikan-Killian surface atlas for FieldTrip analysis. 
 
 Steps to how genetate the nii file [this process can be generalized to produce other Freesurfer surface atlases], 
 
 1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source"
-2) Read (and visualize) surface color-coded areas
+2) Read (and visualize) FreeSurfer-based atlases (e.g., Destrieux),
 
 ```
 atlas = ft_read_atlas('./anat/@default_subject/tess_cortex_pial_low.mat'); % from BS

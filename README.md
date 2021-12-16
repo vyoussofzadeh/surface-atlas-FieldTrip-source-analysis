@@ -30,7 +30,7 @@ source.Comment =  'atlas DK';
 save(fullfile(savetag1),'-struct', 'source'),
 ```
 3) Reload the BS database, the dummy source should be appreared in the panel.  
-4) From the proces window export the source file to nii (volume) using BS (export to SPM8/12)
+4) From the processing window export the source file to nii (volume) using BS (export to SPM8/12)
 This process can done using BS-GUI (File/Export to SPM8/12 (volume))
 
 6) Cheking and example script

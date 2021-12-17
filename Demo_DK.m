@@ -1,6 +1,6 @@
 
-%% 
-ft_defaults % set path ft to matlab
+%% set path ft to matlab
+ft_defaults 
 
 %% Reading and plotting DK atlas
 atlas = ft_read_atlas('tess_cortex_pial_low.mat');

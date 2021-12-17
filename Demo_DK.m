@@ -1,6 +1,4 @@
 
-clear, close all
-
 %% 
 ft_defaults % set path ft to matlab
 

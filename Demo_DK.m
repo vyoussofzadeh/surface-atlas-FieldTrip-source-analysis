@@ -30,7 +30,6 @@ cfg.parameter    = 'anatomy';
 cfg.interpmethod = 'sphere_avg';
 cfg.coordsys     = 'mni';
 data_int  = ft_sourceinterpolate(cfg, ft_source, dkatlas);
-% data_int1 = data_int;
 
 cfg = [];
 cfg.method      = 'mean';

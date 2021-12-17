@@ -26,4 +26,4 @@ save(fullfile(savetag1),'-struct', 'source'),
 
 %% 4) Reload (refresh) the BS database. The dummy source should be appreared in the GUI panel as atlas_DK.  
 %% 5) From the BS processing window export the source file to nii (volume), File/export to SPM8/12. This process can done using BS process_export_spmvol function.
-%% 6) Check the exported file. See example script Demo.m
+%% 6) Check the exported file. See example script Demo_DK.m

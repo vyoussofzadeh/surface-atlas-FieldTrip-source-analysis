@@ -1,7 +1,8 @@
-ft_defaults
 
-%%
 clear, close all
+
+%% 
+ft_defaults
 
 %% Reading and plotting DK atlas
 atlas = ft_read_atlas('tess_cortex_pial_low.mat');
@@ -15,7 +16,6 @@ for iScout=1:nScouts
     end
 end
 
-% Visualisation de l'atlas Desikan_killiany
 figure;
 ft_plot_mesh(atlas, 'faecolor', 'brain',  'vertexcolor', ...
     vertexcolor, 'facealpha', 0.5);
@@ -52,7 +52,6 @@ D_par_DK_val(idx(1:n))
 [l, idx] = sort((D_par_DK_val),'ascend');
 D_par_DK.label(idx(1:n))
 D_par_DK_val(idx(1:n))
-
 
 %% Color-coding atlas
 nScouts = 68;

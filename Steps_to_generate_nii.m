@@ -1,4 +1,4 @@
-%% 1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source."
+%% 1) Export a source map from a sample Brainstorm (BS) database to Matlab, and call the varaible, "Source"
 %% 2) read (and visualize) FreeSurfer-based atlases (e.g., Destrieux),
 atlas = ft_read_atlas('tess_cortex_pial_low.mat'); % from BS
 nScouts = size(unique(atlas.desikan_killiany),1);

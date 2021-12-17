@@ -18,14 +18,13 @@ ft_plot_mesh(atlas, 'faecolor', 'brain',  'vertexcolor', ...
 vertexcolor, 'facealpha', 0.5);
 view(-3, 2);
 
-%% 3) Update source values using color-coded parcel values. Save the updated (dummy) source in BS matlab file format.
+%% 3) Update Source varaible using color-coded parcel values. Save the updated (dummy) source in BS matlab file format.
 sdir = './data/Group_analysis/@intra'; % BS directory
 savetag1 = fullfile(sdir, 'results_atlas_DK');
 source.ImageGridAmp  = atlas.desikan_killiany;
-source.Comment =  'atlas DK';
+source.Comment =  'atlas_DK';
 save(fullfile(savetag1),'-struct', 'source'),
 
-%% 4) Reload the BS database, the dummy source should be appreared in the panel.  
-%% 5) From the processing window export the source file to nii (volume) using BS (export to SPM8/12). This process can done using process_export_spmvol in BS.
-%% 6) Check the exported file example script
-see Demo.m
+%% 4) Reload (refresh) the BS database. The dummy source should be appreared in the GUI panel as atlas_DK.  
+%% 5) From the BS processing window export the source file to nii (volume), File/export to SPM8/12. This process can done using BS process_export_spmvol function.
+%% 6) Check the exported file. See example script Demo.m

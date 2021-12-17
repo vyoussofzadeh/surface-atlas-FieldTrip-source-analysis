@@ -1,4 +1,6 @@
+ft_defaults
 
+%%
 clear, close all
 
 %% Reading and plotting DK atlas
@@ -23,7 +25,6 @@ view(-3, 2);
 load('DK_bs.mat')
 dkatlas = ft_read_atlas('DK.nii');
 dkatlas.parcellationlabel = atlas_DK1.dk_labels;
-
 
 load('ft_sourcesample')
 cfg = [];
@@ -54,7 +55,6 @@ D_par_DK_val(idx(1:n))
 
 
 %% Color-coding atlas
-addpath './cbrewer'
 nScouts = 68;
 % colr = viridis(nScouts);
 % colr = flipud(brewermap(nScouts,'RdBu'));

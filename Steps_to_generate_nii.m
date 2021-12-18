@@ -25,5 +25,5 @@ source.Comment =  'atlas_DK';
 save(fullfile(savetag1),'-struct', 'source'),
 
 %% 4) Reload (refresh) the BS database. The dummy source should appear as atlas_DK.  
-%% 5) From the BS processing window export atlas_DK to nii (volume), File/export to SPM8/12. This process can done using BS process_export_spmvol function.
+%% 5) From the BS processing window export atlas_DK to nii (volume), file/export to SPM8/12. This process can done using BS process_export_spmvol function.
 %% 6) Check the exported file. See example script Demo_DK.m

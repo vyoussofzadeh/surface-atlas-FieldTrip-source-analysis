@@ -60,7 +60,7 @@ colr = flipud(viridis(nScouts));
 [a,b] = sort(D_par_DK.anatomy, 'descend');
 colr1 = colr(b,:);
 
-n = 68;
+n = 68; % selected ROIs
 D_par_DK.label(b(1:n))
 
 atlas.vertexcolor = colr1;

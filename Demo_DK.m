@@ -57,14 +57,14 @@ D_par_DK_val(idx(1:n))
 nScouts = 68;
 % colr = viridis(nScouts);
 % colr = flipud(brewermap(nScouts,'RdBu'));
-% colr = (brewermap(nScouts,'RdBu'));
-colr = flipud(viridis(nScouts));
+colr = (brewermap(nScouts,'RdBu'));
+% colr = flipud(viridis(nScouts));
 
 [a,b] = sort(D_par_DK.anatomy, 'descend');
 colr1 = colr(b,:);
 
 n = 68; % selected ROIs
-D_par_DK.label(b(1:n))
+D_par_DK.label(b(1:n));
 
 atlas.vertexcolor = colr1;
 vertexcolor = zeros(size(atlas_DK1.pos,1), 3);
@@ -75,13 +75,28 @@ for iScout=1:n%nScouts
     end
 end
 
-
 figure;
 ft_plot_mesh(atlas_DK1, 'facecolor', 'brain',  'vertexcolor', ...
     vertexcolor, 'facealpha', 1);
 view(180, 0);
+set(gcf,'name','parcel_left','numbertitle','off')
 
 figure;
 ft_plot_mesh(atlas_DK1, 'facecolor', 'brain',  'vertexcolor', ...
     vertexcolor, 'facealpha', 1);
 view(0, 0);
+set(gcf,'name','parcel_right','numbertitle','off')
+
+%% Plotting source map
+ft_source1 = ft_source;
+
+x = ft_source1.anatomy;
+ft_source1.anatomy = (x - nanmean(x))./nanstd(x);
+
+cfg = [];
+cfg.subj = 'source';
+cfg.mask = 'anatomy';
+cfg.thre = 0;
+cfg.saveflag  = 2;
+cfg.savepath = [];
+do_sourcevisualization(cfg, ft_source1);

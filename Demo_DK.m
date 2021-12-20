@@ -1,3 +1,6 @@
+% MATLAB script was written by
+% Vahab Youssof Zadeh, 12/2021
+% For enquiries, please contact: vyoussofzadeh@mcw.edu
 
 %% set path ft to matlab
 ft_defaults 

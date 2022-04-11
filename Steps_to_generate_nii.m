@@ -24,7 +24,7 @@ view(-3, 2);
 
 %% 3) Update Source variable using color-coded parcel values. Save the updated (dummy) source in BS matlab file format.
 sdir = './data/Group_analysis/@intra'; % BS directory
-savetag1 = fullfile(sdir, 'results_atlas_DK');
+savetag1 = fullfile(sdir, 'results_atlas_DK.mat');
 source.ImageGridAmp  = atlas.desikan_killiany;
 source.Comment =  'atlas_DK';
 save(fullfile(savetag1),'-struct', 'source'),
